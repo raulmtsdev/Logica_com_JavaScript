@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_11</title>
+</head>
+
+<body style="text-align:center; background-color:rgb(3, 6, 17);" allign: center>
+    <h1 style="color:rgb(240, 59, 14);">Lógica de Programação com JavaScript - Controle de decisão</h1>
+
+    <script>
+
+        alert("Players digitem um número cada um e torça!");
+
+        var p1 = prompt("Digite um número player 1");
+        p1 = parseFloat(p1);
+
+        var p2 = prompt("Digite um número player 2");
+        p2 = parseFloat(p2);
+
+        if (p1 == p2) {
+            alert("Vocês empataram!");
+        } else {
+            var s = parseInt(Math.random() * 2);
+            alert("Número sorteado da rodada:" + s);
+            alert("Se o número sorteado for 0 ganha o menor número escolhido pelos player. Se o número sorteado for 1 ganha o maior número escolhido pelos player!")
+        }
+
+            if (s === 0 && p1<p2 || s===1 && p1>p2) {
+
+                alert("---" + "O player 1 foi o ganhador!"+"---");
+             
+            } else {
+
+                alert("---"+"O player 2 foi o ganhador!" + "---");
+             }
+        alert("Jogue novamente atualizando a página!");
+
+
+    </script>
+
+</body>
+
+</html>
