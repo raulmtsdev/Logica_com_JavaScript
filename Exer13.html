@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body style="text-align:center; background-color:rgb(245, 242, 210);" allign: center >
+    <h1 style="color:rgb(240, 59, 14);">Lógica de Programação com JavaScript - Repetindo ações </h1>
+    <h2 style="color: brown; font-size: x-large;">Parabéns! Aperte F5 e tente novamente!</h2>
+    <script>
+
+        var num= prompt('Digite a tabuada que queira consultar!');
+        num=parseInt(num);    
+
+        var indice = 1;
+
+        while(indice <= 10){
+
+            document.write(num + 'x' + indice + '=' + (num * indice) + '<br>');
+
+            indice = indice + 1;
+        }
+        document.write('Aperte F5 para consultar outra tabuada!');
+    </script>
+</body>
+</html>
